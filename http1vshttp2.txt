@@ -1,0 +1,5 @@
+1.Http2 is much faster and more reliable than Http1.1.
+2.HTTP1 loads a single request for every TCP connection, while HTTP2 avoids network delay by using multiplexing. HTTP is a network delay sensitive protocol in the sense that if there is less network delay, then the page loads faster.
+3.HTTP/1.1, which keeps all requests and responses in plain text format, HTTP/2 uses the binary framing layer to encapsulate all messages in binary format, while still maintaining HTTP semantics, such as verbs, methods, and headers.
+4.HTTP 1.1 requests and responses, just encoded and packed up differently. HTTP2 adds a number of features to manage the streams, but leaves old semantics untouched.
+5.Typically, a server only serves content to a client device if the client asks for it. However, this approach is not always practical for modern webpages, which often involve several dozen separate resources that the client must request. HTTP/2 solves this problem by allowing a server to "push" content to a client before the client asks for it.
